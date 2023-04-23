@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Weather App</title>
+  <!--   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+ 
+</head>
+
+<body class="text-center">
+  <main>
+    <div class="total">
+      <h1 class="banner p-3">Weather App</h1>
+      <div class="form-group">
+        <input id="city-input" class="form-control" type="text" placeholder="Search city">
+      </div>
+      <div class="search_box">
+        <button type="button" onclick="searchCity()" class="btn">Search</button>
+      </div>
+      <div class="card-header">
+        <h4 id="city-name" class="city_name">----</h4>
+      </div>
+      <hr>
+      <div class="card-body">
+        <div><img id="weather_type_img"></div>
+        <div class="data">
+          <h1 id="weather-type" class="weather_type_title">----</h1>
+
+          <ul class="list-unstyled">
+            <li class="main_temp"><span id="temp">--</span> &#x2103</li>
+            <li><img src="humid.png" alt="humidity" class="logo">&nbsp;&nbsp;Humidity: <span id="min-temp">--</span>%
+            </li>
+            <li><img src="wind.png" alt="wind" class="logo">&nbsp;Wind: <span id="max-temp">--</span>Km/h</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
